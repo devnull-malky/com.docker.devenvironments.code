@@ -1,0 +1,16 @@
+{
+
+"name": "NODE.js y MongoDB",
+"dockerComposeFile": "../docker-compose.yml",
+"service": "api",
+"shutdownAction":"stopCompose",
+"settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.iconTheme": "vs-minimal"
+},
+"extensions": [
+    "aaron-bond-better-comments"
+]
+}
