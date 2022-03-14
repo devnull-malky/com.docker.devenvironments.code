@@ -3,6 +3,7 @@
 "name": "NODE.js y MongoDB",
 "dockerComposeFile": "../docker-compose.yml",
 "service": "api",
+"workspaceFolder": "/api",
 "shutdownAction":"stopCompose",
 "settings": {
     "terminal.integrated.shell.linux": "/bin/bash",
