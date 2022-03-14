@@ -1,23 +1,22 @@
 version: "3.7"
 
 services:
-  api:
+    api:
     container_name: nodejs-fruits-api
     build: .
-    enviroment:
-      - MONGO_URI=mongodb://mongo:27017/fruits
-      - PORT=3000
-      - MODE_ENV=development
+    environment:
+        - MONGO_URI=mongodb://mongo:27017/fruits
+        - PORT=3000
+        - NODE_ENV=development
     depends_on:
-      - mongo
+        - mongo
     volumes:
-      - .vscode:/api/.vscode
+        - .vscode:/api/.vscode
     ports: ["3000:3000"]
     tty: true
 
-  mongo:
+mongo:
     container_name: mongo-db
     image: mongo
     volumes:
-      - "./db:/data/db"
-
+    - "./db:/data/db"
